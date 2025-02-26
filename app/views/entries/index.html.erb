@@ -1,16 +1,10 @@
-<h1>hello foo</h1>
+<h1>Posts</h1>
 
-
-
-
-<p> There are <%= @places.count%> places </p>
+<p>Currently, there are <%= @posts.count %> posts.</p>
 
 <ul>
-  <% for place in @places %>
-    <li>
-    
-      <%= place["name"] %>
-      </a>
-    </li>
+  <% for post in @posts %>
+    <li><%= @post %></li>
   <% end %>
 </ul>
+
