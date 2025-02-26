@@ -2,6 +2,15 @@
 
 <h1><%= @place["name"]%></h1>
 
+<p>
+  <a href="/entries/new?place_id=<%= @place["id"]%>">New Post</a>
+</p>
+
+<p>
+  <a href="/places">Back to all places</a>
+</p>
+
+
 <h2>Posts</h2>
 
 
@@ -13,10 +22,3 @@
 
 
 
-<p>
-  <a href="/entries/new?company_id=1">New Post</a>
-</p>
-
-<p>
-  <a href="/places">Back to all places</a>
-</p>
