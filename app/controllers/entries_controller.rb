@@ -1,7 +1,12 @@
 class EntriesController < ApplicationController
 
   def index
-    # render :inline => "test "
+    
+
+    # find all places rows
+    
+
+
     render :template => "entries/index"
   end 
 
