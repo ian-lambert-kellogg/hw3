@@ -16,7 +16,7 @@ class EntriesController < ApplicationController
     # assign user-entered form data to Post's columns
     @post["title"] = params["title"]
     @post["description"] = params["description"]
-    @post["date"] = params["date"]
+    @post["occurred_on"] = params["occurred_on"]
     # save Post row
     @post.save
     # redirect user
