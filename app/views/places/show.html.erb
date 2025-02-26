@@ -8,16 +8,16 @@
 Mexico City is great!
 </p>
 
-<ul>
-  <% for post in @posts%>
-  <li> <%= post["title"]%>  <%= post["date"]%> <%= post["description"]%></li>
-  
+<% for post in @posts %>
+    <h2><%= post["title"] %></h2>
+    <h4><%= post["occurred_on"] %></h4>
+    <p> <%= post["description"] %> </p>
   <% end %>
-  
-</ul>
+
+
 
 <p>
-  <a href="/entries/new?company_id=10">New Post</a>
+  <a href="/entries/new?company_id=1">New Post</a>
 </p>
 
 <p>

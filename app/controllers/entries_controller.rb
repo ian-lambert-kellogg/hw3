@@ -17,6 +17,7 @@ class EntriesController < ApplicationController
     @post["title"] = params["title"]
     @post["description"] = params["description"]
     @post["occurred_on"] = params["occurred_on"]
+    @post["place_id"] = params["place_id"]
     # save Post row
     @post.save
     # redirect user
